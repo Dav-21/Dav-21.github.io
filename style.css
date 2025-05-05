@@ -1,0 +1,60 @@
+ body {
+	background-color: rgb(0, 0, 0);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	padding: 0;
+	margin: 0;
+ }
+
+
+ .header {
+	font-weight: 900;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 150px;
+	margin: 10px 15px;
+    background: url("https://static.vecteezy.com/system/resources/thumbnails/049/539/670/small/red-halftone-dots-blue-color-pattern-gradient-grunge-texture-background-dot-pop-art-comic-sport-style-vector.jpg") no-repeat center / cover;
+	border-bottom: 3px solid white;
+ }
+
+
+ .header  .logo {
+	display: flex;
+	 align-items: center;
+	 justify-content: center;
+	margin-left: 10px;
+	width: 250px;
+	height: 150px;
+	  /* border: 1px solid white;  */
+ }
+
+ img {
+	width:  230px;
+	height:  120px;
+	object-fit: cover;
+ }
+
+ .settings {
+	margin-right: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	 /* border: 1px solid white; */
+	width: 450px;
+ }
+
+ .settings div p {
+	cursor: pointer;
+	margin: 0;
+	font-size: 21px;
+	transition: all 1s;
+	padding: 10px;
+	color: white;
+ }
+
+ .settings div p:hover {
+	transform: scale(1.2);
+	color: white;
+	text-decoration: underline
+ }
