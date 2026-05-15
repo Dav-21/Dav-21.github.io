@@ -1,0 +1,89 @@
+.todo {
+	transition-duration: var(--transition-duration);
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+	width: 100%;
+	max-width: 404px;
+	min-height: 429px;
+	padding: 24px;
+	border: var(--color-all-borders);
+	border-radius: var(--border-radius);
+	background-color:var(--color-back-todo-block);
+
+	 
+}
+
+.todo__title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 3;
+}
+
+.todo__form {
+	display: flex;
+	column-gap: 16px;
+}
+
+.todo__field {
+	width: 100%;
+}
+
+.todo__form:first-of-type {
+	margin-bottom: 8.5px;
+}
+
+
+
+.todo__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 16px;
+	font-weight:600;
+}
+
+.todo__delete-all-button {
+	transition: var(--transition-duration);
+	color: var(--color-all-text);
+	padding: 0;
+	background-color:  transparent;
+	border: none;
+	
+	&:hover {
+		transform: scale(1.09); 
+	}
+
+	&:not(.is-visible) {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.todo__list,
+.todo__empty-message {
+	&:empty {
+		display: none;
+	}
+}
+
+
+.todo__list {
+	--todo-list-row-gap:8px;
+	display: grid;
+	row-gap: var(--todo-list-row-gap);
+}
+
+
+
+.todo__empty-message {
+	text-align: center;
+	color: var(--color-gray-4);
+}
+
+
+
+
+
+ 

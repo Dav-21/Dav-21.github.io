@@ -1,0 +1,71 @@
+body.dark-theme {
+	--color-switch-back: #fff;
+	--color-back--circle: #000;
+
+	--color-back-body: #1f1f1f;
+	--color-back-todo-block: #050505;
+
+	--color-back-scrollbar-track:  #fff;
+	--color-back-scrollbar-thumb: grey;
+	--color-bacl-scrollbar-thumb: rgb(60, 60, 60);
+
+	 
+	--color-item-delete-btn-hover: #000;
+
+	--color-all-text: #fff;
+	--color-label-plechold: #ffffff;
+	--color-all-borders: 1px solid white;
+	 
+
+	--color-back-input-hover:#414141;
+
+	--color-back-add-button: #2C2C2C;
+	--color-add-button: #fff;
+
+	--color-back-checkbox: #4e4e4e;
+
+	--border-radius: 8px;
+	--input-height: 40px;
+	--transition-duration: 0.3s;
+	--color-scrolltop-icon:#fff;
+
+	--box-shadow:
+		0 0 1px rgb(250, 250, 250),
+		0 2px 8px rgb(254, 254, 254),
+		0 8px 30px rgb(255, 255, 255);
+
+	
+	--box-shadow-hover-mobile:
+		0 1px 2px rgba(255, 255, 255, 0.06),
+		0 6px 14px rgba(255, 255, 255, 0.10),
+		0 14px 30px rgba(255, 255, 255, 0.12);
+
+	--all-size-border-scroll-to-top-anim: 1.5px solid #fff;
+}
+
+
+.theme-switch {
+	display: flex;
+	align-items: center;
+	width: 50px;
+	height: 24px;
+	padding: 4px 3px 4px 3px;
+	border-radius: 20px;
+	cursor: pointer;
+	background-color: var(--color-switch-back)
+}
+
+
+.theme-switch__circle {
+	width: 18px;
+	height: 18px;
+	transition: var(--transition-duration);
+	border-radius: 50%;
+	background-color: var(--color-back--circle)
+}
+
+
+body.dark-theme .theme-switch__circle {
+	transform: translateX(26px);
+
+}

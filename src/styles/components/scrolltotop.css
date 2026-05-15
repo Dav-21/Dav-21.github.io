@@ -1,0 +1,39 @@
+.scroll-to-top {
+	position: fixed;
+	top: 88%;
+	right: 25px;
+	transform: translateY(-50%);
+	margin-right: auto;
+	background: transparent;
+	color: var(--color-scrolltop-icon);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 55px;
+	height: 55px;
+	scroll-behavior: smooth;
+	z-index: 1;
+}
+
+
+/* внешний круг */
+.scroll-to-top::before {
+	content: "";
+	position: absolute;
+	inset: -1px;
+	border-radius: 50%;
+	border:  var(--all-size-border-scroll-to-top-anim);
+	border-top:2px solid #fc0000;
+	animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+ 
+  
+
+  

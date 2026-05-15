@@ -1,0 +1,24 @@
+.button {
+	transition: var(--transition-duration);
+	display:flex;
+	align-items: center;
+	height: var(--input-height);
+	padding: 12px;
+	color: var(--color-add-button);
+	border-radius: var(--border-radius);
+	border:  var(--color-all-borders);
+	background:  var(--color-back-add-button);
+ 
+
+	&:hover {
+		color: var(--color-all-text);
+		background-color: transparent;
+		font-weight: 600;
+		transform:scale(1.03);
+	}
+
+	&:active {
+		transform: scale(0.98);
+	}
+}
+

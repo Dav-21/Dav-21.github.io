@@ -1,0 +1,72 @@
+@media (max-width: 425px) {
+
+	body {
+		padding: 80px 21px;
+	}
+
+	.todo {
+		padding: 14px;
+	}
+
+	.todo-item {
+		font-size: 14.5px;
+		column-gap: 5px;
+		padding: 4px 6px 4px 8px;
+	}
+
+	.todo-item__delete-button,
+	.todo-item__change-button {
+		width: 27px;
+		height: 27px;
+	}
+
+	.todo-item__delete-button svg,
+	.todo-item__change-button svg {
+		width: 17px;
+		height: 17px;
+	}
+
+	.todo-item__checkbox {
+		width: 16px;
+		height: 16px;
+	}
+
+}
+
+
+
+@media (max-width:720px) {
+
+	body {
+		position: static;
+	}
+
+	.scroll-to-top {
+		transform: translateY(0%);
+		position: static;
+		top: auto;
+		right: auto;
+		width: 43px;
+		height: 43px;
+		margin-right: 0;
+		margin-left: auto;
+		margin-top: 15px;
+	}
+}
+
+
+
+/* hover for mobile and desktop*/
+@media (hover:hover) {
+	.todo:hover {
+		transition-duration: var(--transition-duration);
+		box-shadow: var(--box-shadow);
+	}
+}
+
+
+@media (hover:none) {
+	.todo:focus-within{ 
+		box-shadow: var(--box-shadow-hover-mobile);
+	}
+}

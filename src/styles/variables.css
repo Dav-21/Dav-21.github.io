@@ -1,0 +1,51 @@
+ :root {
+ 	 /* switch data */
+	--color-switch-back:#B3B3B3;
+	--color-back--circle:#ffffff;
+
+	--color-back-scrollbar-track:#2C2C2C;
+	--color-back-scrollbar-thumb:#fff;
+	--color-bacl-scrollbar-thumb: rgb(208, 206, 206);
+ 
+	--color-back-body: #F2F1ED;
+
+	  /* #FAF9F6 */
+	--color-back-todo-block:#fff;
+	
+	/* --color-item-delete-btn:#757575; */
+	--color-item-delete-btn-hover:#000;
+
+	--color-all-text:#000;	
+ 	--color-label-plechold: #8d8d8d;
+	--color-all-borders: 1px solid #000;
+	 
+
+	--color-back-input-hover:#F5F5F5;
+	
+	--color-back-add-button:#2C2C2C;
+	--color-add-button:#fff;
+
+	--color-back-checkbox:#2C2C2C;
+	 
+	--border-radius: 8px;
+	--input-height: 40px;
+	--transition-duration: 0.3s;
+	--color-scrolltop-icon:#000;
+ 	
+	--box-shadow:  
+			0 0 1px rgb(0, 0, 0),
+			0 2px 8px rgb(0, 0, 0),
+			0 8px 30px rgb(0, 0, 0);
+
+
+	--box-shadow-hover-mobile:
+		0 1px 2px rgba(0, 0, 0, 0.04),
+		0 6px 14px rgba(0, 0, 0, 0.5),
+		0 14px 30px rgba(0, 0, 0, 0.6);
+
+  
+	--all-size-border-scroll-to-top-anim: 1.5px solid #000;
+
+}
+
+ 
