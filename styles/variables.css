@@ -1,0 +1,36 @@
+:root {
+	 
+	--body-back-color:linear-gradient(90deg, rgba(0, 0, 148, 1) 28%, rgba(64, 223, 255, 1) 100%);
+	--main-card-back:linear-gradient(90deg, #040145 0%, #090979 41%, #00d4ff 100%);
+	--all-text-color:white;
+	--input-text-color:#555;
+	--input-background-color:#fff;
+	--btn-backround-color:#fff;
+	--card-info-line-full:1px solid #fff;
+
+}
+
+
+
+ 
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+
+ 
+
+
+/* block 
+block__element -> __ означает “внутри блока”
+block--modifier ->  означает --Состояние или вариант
+block__element--modifier
+  */
+
+ 

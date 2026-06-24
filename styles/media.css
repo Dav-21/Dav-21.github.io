@@ -1,0 +1,116 @@
+@media (max-width: 600px) {
+	.card {
+		flex: 0 1 470px;
+		margin: 0 0px;
+	}
+
+	body {
+		padding: 20px 22px;
+	}
+
+	.card__search-input::placeholder {
+		font-size: 14px;
+	}
+
+	.error-message  {
+		gap: 5px;
+		padding: 15px 10px 15px 10px;
+	}
+
+	 
+	.error-svg svg {
+		width: 30px;
+		height: 30px;
+	}
+
+	.error-info p:nth-child(1) {
+		font-size: 13px;
+		font-weight: 500;
+	}
+
+	.err-btn {
+		flex: 0 0 40px;
+		font-size: 13px;
+		font-weight: 600;
+		margin-left: 5px;
+	}
+
+		 
+	.suggestion-item {
+		padding: 7px;
+	}
+
+
+}
+
+
+@media (max-width:376px) {
+	
+	.card {
+		/* I have changed only padding-bottom */
+		padding: 30px 30px 15px 30px;
+		height: 215px;
+	}
+
+	.card.activee {
+		height: 370px;
+	}
+	
+	
+	.card__title {
+		font-size: 20px;
+	}
+
+	.card__date-text {
+		font-size: 16px;
+	}
+
+	.card__search-button {
+		flex: 0 0 40px;
+		height: 40px;
+	}
+
+	.card__search-input {
+		font-size: 13px;
+		height: 40px;
+	}
+
+	.card__search-input::placeholder {
+		font-size: 12px;
+	}
+
+	.card__curr-time {
+		font-size: 13px;
+		margin-bottom: 13px;
+	}
+
+	.card__weather {
+		margin: 10px 0px 10px 0px;
+	}
+
+	.card__weather-city {
+		font-size: 35px;
+	}
+
+	.card__weather-temp {
+		font-size: 30px;
+	}
+
+	.card__details {
+		font-size: 13px;
+	}
+
+	.card__weather-img>img {
+		width: 50px;
+		height: 50px;
+	}
+
+	#sugestions-block {
+		top: 43px;
+		font-size: 13px;
+	}
+	
+	.suggestion-item {
+		padding: 5px;
+	}
+}

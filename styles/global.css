@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+input,
+button {
+	border: 0;
+	outline: none;
+}
+
+
+body {
+ 	background: var(--body-back-color);
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	min-height: 100vh;
+ 	font-family: "Poppins";
+}
+
+ 

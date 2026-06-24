@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather App</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/media.css">
+	<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7477/7477790.png">
+</head>
+
+<body>
+
+	<div id="error-message" class="error-message">
+		<div class="error-svg">
+			<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+				stroke="#607d8b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+				<path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+				<path d="M13.024 21.204a2 2 0 0 1 -2.437 -.304l-4.244 -4.243a8 8 0 1 1 13.119 -2.766" />
+				<path d="M22 22l-5 -5" />
+				<path d="M17 22l5 -5" />
+			</svg>
+		</div>
+		<div class="error-info">
+			<p>City Not Found</p>
+			<p>Please check the spelling</p>
+		</div>
+		<button id="err-btn" class="err-btn">Retry</button>
+	</div>
+
+	<div id="card" class="card">
+
+		<div class="card__curr-time">
+			<p id="curr-time">00:00:00</p>
+			<span>Current time</span>
+		</div>
+
+		<h1 class="card__title">Weather App</h1>
+		<div class="card__date">
+			<p id="current-date" class="card__date-text"></p>
+		</div>
+
+		<div class="card__search">
+			<label class="card__search-label" for="city-name"></label>
+			<input placeholder="Enter city name" class="card__search-input" id="city-name" type="text">
+			<div id="sugestions-block"></div>
+			<button id="search-btn" class="card__search-button">
+				<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="21" height="21" viewBox="0 0 50 50"
+					style="fill:#737373;">
+					<path
+						d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z">
+					</path>
+				</svg>
+			</button>
+		</div>
+
+		<div class="card__weather">
+			<p id="current-city-name" class="card__weather-city">Tokyo</p>
+			<div class="card__weather-row">
+				<h3 id="weather-temp" class="card__weather-temp">18°C</h3>
+				<div class="card__weather-img">
+					<img id="weather-img" src="#">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="card__details">
+			<div class="card__details-col">
+				<svg width="20px" height="20px" viewBox="0 0 28.00 28.00" version="1.1"
+					xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000"
+					transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					<g id="SVGRepo_iconCarrier">
+						<title>wind</title>
+						<desc>Created with Sketch Beta.</desc>
+						<defs></defs>
+						<g id="Page-1" stroke-width="0.00028" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+							<g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-466.000000, -830.000000)"
+								fill="#000000">
+								<path
+									d="M488,844 L467,844 C466.447,844 466,844.447 466,845 C466,845.553 466.447,846 467,846 L486.833,846 C489.687,846 492,847.791 492,850 C492,852.209 490.291,854 486,854 L486,856 L488,856 C491.313,856 494,853.313 494,850 C494,846.687 491.313,844 488,844 L488,844 Z M480.002,848 L480,848 L472,848 C471.447,848 471,848.448 471,849 C471,849.553 471.447,850 472,850 L480,850 C481.104,850 482,850.896 482,852 C482,853.104 481.104,854 480,854 L480,856 C482.209,856 484,854.209 484,852 C484,849.792 482.21,848.002 480.002,848 L480.002,848 Z M475,838 L487,838 C487.553,838 488,837.553 488,837 C488,836.448 487.553,836 487,836 L475,836 C474.447,836 474,836.448 474,837 C474,837.553 474.447,838 475,838 L475,838 Z M470,842 L488,842 C491.313,842 494,839.313 494,836 C494,832.687 491.313,830 488,830 L488,832 C490.822,832.531 492,833.791 492,836 C492,838.209 489.687,840 486.833,840 L470,840 C469.447,840 469,840.448 469,841 C469,841.553 469.447,842 470,842 L470,842 Z"
+									sketch:type="MSShapeGroup"></path>
+							</g>
+						</g>
+					</g>
+				</svg>
+				<p>Wind</p>
+				<hr class="line">
+				<p id="wind-speed" class="card__details-wind">2.57m/s</p>
+			</div>
+
+			<div class="card__details-col">
+				<svg width="20px" height="20px" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					<g id="SVGRepo_iconCarrier">
+						<path
+							d="M5.3,11.214A6.791,6.791,0,0,0,10.792,22h2.416A6.791,6.791,0,0,0,18.7,11.214L12,2Zm5.946,8.036a5.24,5.24,0,0,1-4.631-2.779,1,1,0,1,1,1.766-.942,3.239,3.239,0,0,0,2.865,1.721,1,1,0,0,1,0,2Z">
+						</path>
+					</g>
+				</svg>
+				<p>Hum</p>
+				<hr class="line">
+				<p id="humidity-level" class="card__details-hum">56%</p>  
+			</div>
+		</div>
+	</div>
+
+	<script type="module" src="script.js"></script>
+</body>
+
+</html>
