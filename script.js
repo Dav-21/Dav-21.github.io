@@ -84,7 +84,7 @@ function saveCity(city) {
   cities = cities.filter((item) => {
     return item.toLowerCase() !== city.toLowerCase();
   });
-
+ 
   cities.unshift(city);
   let lastfourCities = cities.slice(0, 4);
 
@@ -145,16 +145,16 @@ cardInput.addEventListener("keydown", (e) => {
     getWeather(cardInput.value);
     checkCity();
 
-    if (shouldAutoFocus()) cardInput.focus();
-    cardInput.blur();
-  }
-});
+	shouldAutoFocus() ? cardInput.focus() : cardInput.blur();
+}
+})
 
 
-
+	
 cardBtn.addEventListener("click", () => {
   getWeather(cardInput.value);
   checkCity();
+  shouldAutoFocus() ? cardInput.focus() : cardInput.blur();
 });
 
 
